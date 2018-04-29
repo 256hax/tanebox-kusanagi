@@ -49,7 +49,11 @@ body::before {
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
-text-transform: none; /* Materializeはデフォルトでuppercaseになっているためnoneにする */
+  text-transform: none; /* Materializeはデフォルトでuppercaseになっているためnoneにする */
+}
+
+.card-content {
+  min-height: 250px;
 }
 
 .footer {
