@@ -21,13 +21,16 @@ $custom_header_style .= '</style>';
   <div class="container">
     <div class="row">
       <div class="top">
-        <div class="site-title col-md-8">
+        <div class="site-title col-md-2">
           <?php
           printf( '<a href="%s">%s</a>',
             esc_url( home_url( '/' ) ),
             get_bloginfo( 'name' )
           );
           ?>
+        </div>
+        <div class="site-catchphrase col-md-6 hidden-xs hidden-sm">
+          <?php echo get_bloginfo( 'description' ); ?>
         </div>
 
         <div class="search-form-nostyle col-md-4 hidden-xs hidden-sm">
