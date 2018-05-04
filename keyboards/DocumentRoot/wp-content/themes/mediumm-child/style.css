@@ -2,15 +2,16 @@
  * Theme Name: Mediumm-Child
  * Template:   mediumm
  **/
+* { font-family: "Rounded Mplus 1c"; } /* Google Fonts */
 
- .header .top .site-title {
+.header .top .site-title {
    font-size: 150%;
- }
+}
 
- .header .top .site-catchphrase {
+.header .top .site-catchphrase {
    line-height: 65px;
    text-overflow: ellipsis;
    overflow: hidden;
    color: #888;
    font-size: 90%;
- }
+}
