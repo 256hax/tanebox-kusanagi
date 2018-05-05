@@ -14,6 +14,6 @@ use Jojoee\Mediumm\Lib\Utils;
 
 <footer class="footer-info">
   <div class="container">
-    &copy; <?php echo date( 'Y' ) ?> <?php Utils\mediumm_the_site_domain(); ?>
+    &copy; <?php echo date( 'Y' ) ?> <a href="http://tanebox.com/">256hax</a>
   </div>
 </footer><!-- .footer-info -->
