@@ -5,15 +5,6 @@
 
 * { font-family: "Rounded Mplus 1c"; } /* Google Fonts */
 
-html[lang="ja"] h1,
-html[lang="ja"] h2,
-html[lang="ja"] h3,
-html[lang="ja"] h4,
-html[lang="ja"] h5,
-html[lang="ja"] h6 {
-	font-weight: 400;
-}
-
 .site-title {
 	font-weight: normal;
 }
