@@ -21,6 +21,9 @@ $keycaps = get_field('keycaps');
 $dye_sub_printing = $keycaps['dye_sub_printing'] == 1 ? '(昇華印刷)' : '';
 $ec_main_informations = get_field('ec_main_informations');
 $ec_sites = get_field('ec_sites');
+$product_cutomize_images = get_field('product_cutomize_images');
+$customize_main_informations = get_field('customize_main_informations');
+$customize_ec_sites = get_field('customize_ec_sites');
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -76,15 +79,15 @@ $ec_sites = get_field('ec_sites');
 		) );
 		?>
 
-		<!-- product_main_informations -->
+		<!-- product main informations -->
 		<div class="contents-container">
 			<img src="<?php echo $product_main_informations['picture']['url']; ?>" width="640">
 			<h2><?php echo $product_main_informations['heading_descriptions']; ?></h2>
 			<?php echo $product_main_informations['descriptions']; ?>
 		</div>
-		<!-- /product_main_informations -->
+		<!-- /product main informations -->
 
-		<!-- product_images pictures -->
+		<!-- product images pictures -->
 		<?php if( $product_images['pictures'] ): ?>
 			<div class="embed-container">
 				<?php foreach( $product_images['pictures'] as $product_images_pictures ) { ?>
@@ -94,9 +97,9 @@ $ec_sites = get_field('ec_sites');
 				<?php } ?>
 			</div>
 		<?php endif; ?>
-		<!-- /product_images pictures -->
+		<!-- /product images pictures -->
 
-		<!-- product_images videos -->
+		<!-- product images videos -->
 		<?php if( $product_images['videos'] ): ?>
 			<div class="embed-container">
 				<?php foreach( $product_images['videos'] as $product_images_videos ) { ?>
@@ -106,7 +109,7 @@ $ec_sites = get_field('ec_sites');
 				<?php } ?>
 			</div>
 		<?php endif; ?>
-		<!-- /product_images videos -->
+		<!-- /product images videos -->
 
 		<h2>Specs</h2>
 		<!-- keys -->
@@ -132,7 +135,7 @@ $ec_sites = get_field('ec_sites');
 		<?php endif; ?>
 		<!-- /keycaps -->
 
-		<!-- ec_sites -->
+		<!-- ec sites -->
 		<?php if( $ec_main_informations ): ?>
 			<div class="contents-container">
 				<h2><?php echo $ec_main_informations['heading_descriptions']; ?></h2>
@@ -140,13 +143,59 @@ $ec_sites = get_field('ec_sites');
 				<?php if( $ec_sites ): ?>
 					<ul class="list">
 						<?php foreach ($ec_sites as $ec_site) { ?>
-							<li><a href="<?php echo $ec_site['site_link']['url']; ?>" target="_blank" rel="nofollow"><?php echo $ec_site['site_link']['title']; ?></li>
+							<li><a href="<?php echo $ec_site['site_link']['url']; ?>" target="_blank" rel="nofollow"><?php echo $ec_site['site_link']['title']; ?></a></li>
 						<?php } ?>
 					</ul>
 				<?php endif; ?>
 			</div>
 		<?php endif; ?>
-		<!-- /ec_sites -->
+		<!-- /ec sites -->
+
+		<h2>Customize</h2>
+		<!-- product_cutomize_images pictures -->
+		<?php if( $product_cutomize_images['pictures'] ): ?>
+			<div class="embed-container">
+				<?php foreach( $product_cutomize_images['pictures'] as $product_images_picture ) { ?>
+					<p>
+						<?php echo $product_images_picture['url']; ?>
+					</p>
+				<?php } ?>
+			</div>
+		<?php endif; ?>
+		<!-- /product_cutomize_images pictures -->
+
+		<!-- product_cutomize_images videos -->
+		<?php if( $product_cutomize_images['videos'] ): ?>
+			<div class="embed-container">
+				<?php foreach( $product_cutomize_images['videos'] as $product_images_video ) { ?>
+					<p>
+						<?php echo $product_images_video['url']; ?>
+					</p>
+				<?php } ?>
+			</div>
+		<?php endif; ?>
+		<!-- /product_cutomize_images videos -->
+
+		<!-- customize main informations  -->
+		<?php if( $customize_main_informations ): ?>
+			<div class="contents-container">
+				<h2><?php echo $customize_main_informations['heading_descriptions']; ?></h2>
+				<?php echo $customize_main_informations['descriptions']; ?>
+			</div>
+		<?php endif; ?>
+		<!-- /customize main informations -->
+
+		<!-- customize ec sites -->
+		<?php if( $customize_ec_sites ): ?>
+			<div class="contents-container">
+					<ul class="list">
+						<?php foreach ($customize_ec_sites as $customize_ec_site) { ?>
+							<li><a href="<?php echo $customize_ec_site['site_link']['url']; ?>" target="_blank" rel="nofollow"><?php echo $customize_ec_site['site_link']['title']; ?></a></li>
+						<?php } ?>
+					</ul>
+			</div>
+		<?php endif; ?>
+		<!-- /customize ec sites -->
 
 	</div><!-- .entry-content -->
 
