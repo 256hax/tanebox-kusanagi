@@ -90,23 +90,16 @@ $customize_ec_sites = get_field('customize_ec_sites');
 		<!-- product images pictures -->
 		<?php if( $product_images['pictures'] ): ?>
 			<div class="embed-container">
-				<?php foreach( $product_images['pictures'] as $product_images_pictures ) { ?>
-					<p>
-						<?php echo $product_images_pictures['url']; ?>
-					</p>
-				<?php } ?>
+				<?php echo $product_images['pictures']; ?>
 			</div>
 		<?php endif; ?>
 		<!-- /product images pictures -->
 
 		<!-- product images videos -->
 		<?php if( $product_images['videos'] ): ?>
+			<h2>Videos</h2>
 			<div class="embed-container">
-				<?php foreach( $product_images['videos'] as $product_images_videos ) { ?>
-					<p>
-						<?php echo $product_images_videos['url']; ?>
-					</p>
-				<?php } ?>
+				<?php echo $product_images['videos']; ?>
 			</div>
 		<?php endif; ?>
 		<!-- /product images videos -->
@@ -155,23 +148,16 @@ $customize_ec_sites = get_field('customize_ec_sites');
 		<!-- product_cutomize_images pictures -->
 		<?php if( $product_cutomize_images['pictures'] ): ?>
 			<div class="embed-container">
-				<?php foreach( $product_cutomize_images['pictures'] as $product_images_picture ) { ?>
-					<p>
-						<?php echo $product_images_picture['url']; ?>
-					</p>
-				<?php } ?>
+				<?php echo $product_cutomize_images['pictures']; ?>
 			</div>
 		<?php endif; ?>
 		<!-- /product_cutomize_images pictures -->
 
 		<!-- product_cutomize_images videos -->
 		<?php if( $product_cutomize_images['videos'] ): ?>
+			<h2>Videos</h2>
 			<div class="embed-container">
-				<?php foreach( $product_cutomize_images['videos'] as $product_images_video ) { ?>
-					<p>
-						<?php echo $product_images_video['url']; ?>
-					</p>
-				<?php } ?>
+				<?php echo $product_cutomize_images['videos']; ?>
 			</div>
 		<?php endif; ?>
 		<!-- /product_cutomize_images videos -->
