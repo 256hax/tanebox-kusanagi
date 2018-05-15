@@ -8,13 +8,13 @@
 .site-title {	font-weight: normal; }
 
 
-/* Single Product */
-/* カスタム投稿タイプのsingle-productのスタイル。
+/* Single Keyboard */
+/* カスタム投稿タイプのsingle-keyboardのスタイル。
 　　single-postと同一のデザインにしたいが、
-　　single-productはbody classにsingle-postが追加されないため、
+　　single-keyboardはbody classにsingle-postが追加されないため、
 　　single-postに適用されているデザインを追加設定。
 */
-.single-product:not(.has-sidebar) #primary,
+.single-keyboard:not(.has-sidebar) #primary,
 .page.page-one-column:not(.twentyseventeen-front-page) #primary {
 	margin-left: auto;
 	margin-right: auto;
@@ -24,7 +24,7 @@
 @media screen and (min-width: 48em) {
 
 	/* Product */
-	.single-product .entry-title,
+	.single-keyboard .entry-title,
 	.page .entry-title {
 		font-size: 26px;
 		font-size: 1.625rem;
