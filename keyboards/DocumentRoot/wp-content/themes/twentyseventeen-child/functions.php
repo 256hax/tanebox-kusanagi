@@ -11,4 +11,5 @@ function theme_enqueue_styles() {
 // reference: https://wordpress.org/plugins/markdown-editor/
 add_post_type_support( 'page', 'wpcom-markdown' );
 add_post_type_support( 'keyboard', 'wpcom-markdown' );
+add_post_type_support( 'blog', 'wpcom-markdown' );
 ?>
