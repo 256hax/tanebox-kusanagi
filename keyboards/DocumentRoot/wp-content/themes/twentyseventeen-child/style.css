@@ -7,14 +7,19 @@
 
 .site-title {	font-weight: normal; }
 
+h2 {
+	margin: 100px 0 50px;
+}
 
-/* Single Keyboard */
-/* カスタム投稿タイプのsingle-keyboardのスタイル。
+/* --- 共通設定 --- */
+/* カスタム投稿タイプのスタイルを反映する。
 　　single-postと同一のデザインにしたいが、
-　　single-keyboardはbody classにsingle-postが追加されないため、
-　　single-postに適用されているデザインを追加設定。
+　　カスタム投稿タイプ（例：single-keyboardなど）は、
+　　body classにsingle-postが追加されないため、
+　　single-postもカスタム投稿タイプも共通で出力されるclassの「.single」に
+　　スタイルを設定。主にwidth設定だけでOK。
 */
-.single-keyboard:not(.has-sidebar) #primary,
+.single:not(.has-sidebar) #primary,
 .page.page-one-column:not(.twentyseventeen-front-page) #primary {
 	margin-left: auto;
 	margin-right: auto;
@@ -24,7 +29,7 @@
 @media screen and (min-width: 48em) {
 
 	/* Product */
-	.single-keyboard .entry-title,
+	.single .entry-title,
 	.page .entry-title {
 		font-size: 26px;
 		font-size: 1.625rem;
