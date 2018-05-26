@@ -11,7 +11,9 @@ h2 {
 	margin: 100px 0 50px;
 }
 
-/* --- 共通設定 --- */
+
+/* Single Post */
+
 /* カスタム投稿タイプのスタイルを反映する。
 　　single-postと同一のデザインにしたいが、
 　　カスタム投稿タイプ（例：single-keyboardなど）は、
@@ -34,4 +36,20 @@ h2 {
 		font-size: 26px;
 		font-size: 1.625rem;
 	}
+}
+
+/* Eye-Catch Image */
+.single-featured-image-header {
+	height: 450px; /* Trimming height */
+	overflow: hidden;
+	position: relative;
+}
+
+.single-featured-image-header img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
