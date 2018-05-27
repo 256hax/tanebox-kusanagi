@@ -37,9 +37,48 @@ get_header(); ?>
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/post/content-keyboard', get_post_format() );
+				//get_template_part( 'template-parts/post/content', get_post_format() );
+			?>
 
-			endwhile;
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<?php
+					if ( is_sticky() && is_home() ) :
+						echo twentyseventeen_get_svg( array( 'icon' => 'thumb-tack' ) );
+					endif;
+					?>
+					<header class="entry-header">
+						<?php
+						/* hide author and pub date.
+						echo '<div class="entry-meta">';
+						if ( is_single() ) {
+							twentyseventeen_posted_on();
+						} else {
+							echo twentyseventeen_time_link();
+							twentyseventeen_edit_link();
+						};
+						echo '</div><!-- .entry-meta -->';
+						*/
+
+						if ( is_single() ) {
+							the_title( '<h1 class="entry-title">', '</h1>' );
+						} elseif ( is_front_page() && is_home() ) {
+							the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
+						} else {
+							the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+						}
+						?>
+					</header><!-- .entry-header -->
+
+					<?php if ( '' !== get_the_post_thumbnail() && ! is_single() ) : ?>
+						<div class="post-thumbnail">
+							<a href="<?php the_permalink(); ?>">
+								<?php the_post_thumbnail( 'twentyseventeen-featured-image' ); ?>
+							</a>
+						</div><!-- .post-thumbnail -->
+					<?php endif; ?>
+
+				</article><!-- #post-## -->
+			<?php endwhile;
 
 			the_posts_pagination( array(
 				'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
