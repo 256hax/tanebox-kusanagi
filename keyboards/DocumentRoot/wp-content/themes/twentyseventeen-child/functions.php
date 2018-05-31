@@ -10,6 +10,7 @@ function theme_enqueue_styles() {
 // By default Markdown Editor is only enabled on Posts, but you can enable it on pages and custom post types by adding post type support.
 // reference: https://wordpress.org/plugins/markdown-editor/
 add_post_type_support( 'page', 'wpcom-markdown' );
-add_post_type_support( 'keyboard', 'wpcom-markdown' );
+add_post_type_support( 'reviews', 'wpcom-markdown' );
 add_post_type_support( 'blog', 'wpcom-markdown' );
+add_post_type_support( 'photos', 'wpcom-markdown' );
 ?>
