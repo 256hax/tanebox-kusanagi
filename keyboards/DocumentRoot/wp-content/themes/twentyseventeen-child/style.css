@@ -15,6 +15,24 @@ h2 {
 	margin: 100px 0 50px;
 }
 
+/* disable text uppercase */
+h5,
+.site-title,
+.page .panel-content .entry-title,
+.page-title,
+body.page:not(.twentyseventeen-front-page) .entry-title,
+.entry-meta,
+.entry-footer .cat-links,
+.entry-footer .tags-links,
+.nav-subtitle,
+.comment-metadata,
+h2.widget-title,
+.widget_rss .rss-date,
+.widget_rss li cite,
+.site-content .wp-playlist-current-item .wp-playlist-item-artist,
+.twentyseventeen-customizer.twentyseventeen-front-page .twentyseventeen-panel .twentyseventeen-panel-title {
+	text-transform: none;
+}
 
 /* Single Post */
 
