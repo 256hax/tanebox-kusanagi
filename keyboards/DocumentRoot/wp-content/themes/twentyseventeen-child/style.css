@@ -16,6 +16,7 @@ h2 {
 }
 
 /* disable text uppercase */
+/*
 h5,
 .site-title,
 .page .panel-content .entry-title,
@@ -33,6 +34,7 @@ h2.widget-title,
 .twentyseventeen-customizer.twentyseventeen-front-page .twentyseventeen-panel .twentyseventeen-panel-title {
 	text-transform: none;
 }
+*/
 
 /* Single Post */
 
