@@ -9,6 +9,10 @@
  * @since 1.0
  * @version 1.0
  */
+ /*
+ 	Template Name: 写真
+ 	Template Post Type: photos, customize
+ */
 
 get_header(); ?>
 
