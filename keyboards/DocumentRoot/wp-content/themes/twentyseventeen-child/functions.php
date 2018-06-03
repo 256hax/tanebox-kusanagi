@@ -13,4 +13,5 @@ add_post_type_support( 'page', 'wpcom-markdown' );
 add_post_type_support( 'reviews', 'wpcom-markdown' );
 add_post_type_support( 'blog', 'wpcom-markdown' );
 add_post_type_support( 'photos', 'wpcom-markdown' );
+add_post_type_support( 'customize', 'wpcom-markdown' );
 ?>
