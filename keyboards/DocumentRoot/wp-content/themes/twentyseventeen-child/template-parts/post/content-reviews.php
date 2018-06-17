@@ -104,29 +104,65 @@ $customize_ec_sites = get_field('customize_ec_sites');
 		<?php endif; ?>
 		<!-- /product images videos -->
 
-		<h2>Specs</h2>
-		<!-- keys -->
-		<?php if( $keys ): ?>
-			<div class="contents-container">
-					<ul class="list">
-						<li>キー数<?php echo $keys['count']; ?></li>
-						<li><?php echo $keys['layout']; ?></li>
-					</ul>
-			</div>
-		<?php endif; ?>
-		<!-- /keys -->
+		<!-- specs -->
+		<?php	if( have_rows('specs') ):	?>
+			<h2>Specs</h2>
 
-		<!-- keycaps -->
-		<?php if( $keycaps ): ?>
-			<div class="contents-container">
-					<ul class="list">
-						<li><?php echo $keycaps['materials']; ?> <?php echo $dye_sub_printing; ?></li>
-						<li><?php echo $keycaps['profiles']; ?>プロファイル</li>
-						<li><?php echo $keycaps['switches']; ?>軸</li>
-					</ul>
-			</div>
+			<?php while ( have_rows('specs') ) : the_row(); ?>
+
+				<!-- keys -->
+				<?php if( get_row_layout() == 'keys' ): ?>
+					<div class="contents-container">
+						<ul class="list">
+							<!-- keys count -->
+							<?php $count = get_sub_field('count'); if( $count ): ?>
+								<li>キー数<?php echo $count; ?></li>
+							<?php endif; ?>
+							<!-- /keys count -->
+							<!-- keys layout -->
+							<?php $layout = get_sub_field('coulayoutnt'); if( layout ): ?>
+								<li><?php the_sub_field('layout'); ?></li>
+							<?php endif; ?>
+							<!-- /keys layout -->
+						</ul>
+					</div>
+				<?php endif; ?>
+				<!-- /keys -->
+
+				<!-- keycaps -->
+				<?php if( get_row_layout() == 'keycaps' ): ?>
+					<div class="contents-container">
+						<ul class="list">
+							<!-- materials -->
+							<?php $materials = get_sub_field('materials'); if( $materials ): ?>
+								<li><?php the_sub_field('materials'); ?> <?php the_sub_field($dye_sub_printing); ?></li>
+							<?php endif; ?>
+							<!-- /materials -->
+							<!-- profiles -->
+							<?php $profiles = get_sub_field('profiles'); if( $profiles ): ?>
+								<li><?php the_sub_field('profiles'); ?>プロファイル</li>
+							<?php endif; ?>
+							<!-- /profiles -->
+							<!-- switches -->
+							<?php $switches = get_sub_field('switches'); if( $switches ): ?>
+								<li><?php the_sub_field('switches'); ?>軸</li>
+							<?php endif; ?>
+							<!-- /switches -->
+						</ul>
+					</div>
+				<?php endif; ?>
+				<!-- /keycaps -->
+
+				<?php /*
+        if( get_row_layout() == 'keys' ):
+        	the_sub_field('count');
+        elseif( get_row_layout() == 'keycaps' ):
+        	the_sub_field('materials');
+        endif;
+				*/ ?>
+	    <?php endwhile; ?>
 		<?php endif; ?>
-		<!-- /keycaps -->
+		<!-- /specs -->
 
 		<!-- ec sites -->
 		<?php if( $ec_main_informations ): ?>
