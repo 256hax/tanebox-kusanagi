@@ -16,9 +16,7 @@
 // ACF
 $product_main_informations = get_field('product_main_informations');
 $product_images = get_field('product_images');
-$keys = get_field('keys');
-$keycaps = get_field('keycaps');
-$dye_sub_printing = $keycaps['dye_sub_printing'] == 1 ? '(昇華印刷)' : '';
+//$dye_sub_printing = $keycaps['dye_sub_printing'] == 1 ? '(昇華印刷)' : '';
 $ec_main_informations = get_field('ec_main_informations');
 $ec_sites = get_field('ec_sites');
 $product_cutomize_images = get_field('product_cutomize_images');
@@ -135,7 +133,7 @@ $customize_ec_sites = get_field('customize_ec_sites');
 						<ul class="list">
 							<!-- materials -->
 							<?php $materials = get_sub_field('materials'); if( $materials ): ?>
-								<li><?php the_sub_field('materials'); ?> <?php the_sub_field($dye_sub_printing); ?></li>
+								<li><?php the_sub_field('materials'); ?> <?php the_sub_field('injection_molding'); ?></li>
 							<?php endif; ?>
 							<!-- /materials -->
 							<!-- profiles -->
@@ -153,13 +151,6 @@ $customize_ec_sites = get_field('customize_ec_sites');
 				<?php endif; ?>
 				<!-- /keycaps -->
 
-				<?php /*
-        if( get_row_layout() == 'keys' ):
-        	the_sub_field('count');
-        elseif( get_row_layout() == 'keycaps' ):
-        	the_sub_field('materials');
-        endif;
-				*/ ?>
 	    <?php endwhile; ?>
 		<?php endif; ?>
 		<!-- /specs -->
