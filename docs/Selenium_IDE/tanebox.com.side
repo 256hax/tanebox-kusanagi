@@ -7,7 +7,7 @@
     "name": "コトコト",
     "commands": [{
       "id": "161de40b-099c-4e3c-ad30-7db9ac43a9c7",
-      "comment": "",
+      "comment": "トップページ",
       "command": "open",
       "target": "https://keyboards.tanebox.com/?celenium-test",
       "targets": [],
@@ -43,7 +43,7 @@
       "value": "キーボードのカラーリングシミュレーター"
     }, {
       "id": "c18eb04a-16d7-4a3b-86fb-1a29a5dd2abd",
-      "comment": "",
+      "comment": "投稿",
       "command": "open",
       "target": "https://keyboards.tanebox.com/a/blog/517?celenium-test",
       "targets": [],
@@ -61,7 +61,7 @@
       "value": "MassdropでALTキーボード購入"
     }, {
       "id": "f62a2e0d-289e-4f3f-8eb4-fb458f0ee651",
-      "comment": "",
+      "comment": "レビュー (Custom Post Type: reviews)",
       "command": "open",
       "target": "https://keyboards.tanebox.com/a/reviews/581?celenium-test",
       "targets": [],
@@ -79,7 +79,7 @@
       "value": "40%メカニカルキーボード VORTEX CORE"
     }, {
       "id": "b9db5d34-cd95-43aa-9c22-c489cbd38ed3",
-      "comment": "",
+      "comment": "ACF Pro",
       "command": "verifyText",
       "target": "css=h2 > p",
       "targets": [
@@ -90,7 +90,7 @@
       "value": "小さくても高機能"
     }, {
       "id": "a1914549-0b5d-4ec9-84ff-e92c292704f9",
-      "comment": "",
+      "comment": "写真 (Custom Post Type: photos)",
       "command": "open",
       "target": "https://keyboards.tanebox.com/photos-category/kbdart?celenium-test",
       "targets": [],
@@ -111,7 +111,7 @@
       "value": "車もシューズもキーキャップ"
     }, {
       "id": "1e0eaa06-f16b-4581-9c7c-4d22afc9397e",
-      "comment": "",
+      "comment": "カスタマイズ (Custom Post Type: customize)",
       "command": "open",
       "target": "https://keyboards.tanebox.com/a/customize/massdrop%E3%81%A7%E6%97%A5%E6%9C%AC%E3%81%8B%E3%82%89%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E9%96%A2%E9%80%A3%E3%82%92%E8%B3%BC%E5%85%A5%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95?celenium-test",
       "targets": [],
@@ -129,7 +129,7 @@
       "value": "Massdropで日本からキーボード関連を購入する方法"
     }, {
       "id": "f14facb1-1568-4a59-a294-0509f9a4b138",
-      "comment": "",
+      "comment": "CM Tooltip Glossary Pro+",
       "command": "open",
       "target": "https://keyboards.tanebox.com/glossary/doubleshot?celenium-test",
       "targets": [],
