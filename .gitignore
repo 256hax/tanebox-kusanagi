@@ -20,6 +20,9 @@
 **/wp-content/plugins/
 **/wp-admin/
 
+#--- Themes ---
+**/twentyseventeen/
+
 #--- front-end ---
 
 #--- Editor, Mac ----

@@ -22,7 +22,7 @@
         ["//article[@id='post-213']/div/div/header/h2", "xpath:idRelative"],
         ["//h2", "xpath:position"]
       ],
-      "value": "INDEX"
+      "value": "TOP"
     }, {
       "id": "a161a1ef-d43f-4cd5-825b-59fe53cfab7f",
       "comment": "",
