@@ -8,8 +8,8 @@
 	        $myposts = get_posts($args);
 	        if ($myposts) : foreach ($myposts as $post) :
 	    ?>
-	    <dt><?php the_time( get_option( 'date_format' ) ); ?><</dt>
+			<dt class="entry-meta"><?php the_time( get_option( 'date_format' ) ); ?></dt>
 	    <dd><a href="<?php the_permalink();?>"><?php the_title(); ?></a></dd>
 	    <?php endforeach; endif; ?>
 	</dl>
-</div>
+</div><!-- .su-posts -->
