@@ -6,7 +6,7 @@
 **/sitemap.xml
 **/sitemap.xml.gz
 
-#--- WordPress ---
+#--- WordPress Common ---
 **/wp-config.php
 **/wp-content/advanced-cache.php
 **/wp-content/backup-db/
@@ -20,11 +20,12 @@
 **/wp-content/plugins/
 **/wp-admin/
 
-#--- Themes ---
+#--- WordPress Themes ---
 **/twentyfifteen/
 **/twentyseventeen/
 
-#--- front-end ---
+#--- SSL ---
+.well-known
 
 #--- Editor, Mac ----
 # Atom Remote-FTP
